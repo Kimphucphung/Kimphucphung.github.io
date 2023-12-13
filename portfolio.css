@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display&display=swap');
+
+:root {
+    --primary: #fefbdf;
+    --secondary: rgba(249, 217, 221, 0.81);
+}
+
+/* navbar */
+.navbar {
+    background-color: #FDF7E9;
+    height: 65px;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #FC9073;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+#offcanvasNavbar{
+    background-color: #FDF7E9;
+}
+
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-item {
+    font-weight: 500;
+    font-family: Arial, sans-serif;
+}
+
+.nav-link {
+    color: #666777;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #000;
+}
+
+@media (min-width: 991px){
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #fc9173;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link.active {
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+
+    .nav-link:hover::before {
+        width: 100%;
+        visibility: visible;
+    }
+
+    .nav-link.active::before {
+        width: 0;
+        visibility: hidden;
+    }
+
+    .nav-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+}
+/* End Navbar */
+
+/* Start Section 1 */
+.hero-section img {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+/* End Section 1 */
+
+/* Start Section 2 */
+/* Section Header cho section 2 */
+#my-work-section {
+    position: relative;
+    padding: 0;
+    margin-top: 50px;
+}
+
+#my-work-section img {
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+}
+
+.my-big-text {
+    position: absolute;
+    width: 80%;
+    max-width: 581px;
+    top: 1%;
+    left: 5%;
+    font-family: "Dancing Script";
+    font-weight: 400;
+    font-size: clamp(3rem, 16vw, 16rem); /* Responsive font size */
+    text-align: start;
+    color: black;
+    opacity: 25%;
+    animation: gentleMovementLeft 1.3s ease forwards; /* Adjust animation duration as needed */
+
+}
+
+.my-big-text-2 {
+    position: absolute;
+    top: 55%;
+    left: 79%;
+    transform: translate(-50%, -50%);
+    font-family: "Dancing Script";
+    font-weight: 400;
+    font-size: clamp(3rem, 16vw, 16rem); /* Responsive font size */
+    text-align: end;
+    color: black;
+    opacity: 25%;
+    animation: gentleMovementRight 1.5s ease forwards;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    #my-work-section {
+        margin-bottom: 100px; /* Khoảng cách lớn hơn cho các thiết bị nhỏ hơn */
+        margin-top: 100px;
+    }
+}
+
+/* Graphic Design */
+.image-container {
+    width: 100%;
+    height: 250px; /* Set a fixed height for consistent cropping */
+    overflow: hidden;
+    position: relative;
+    padding: 15px;
+    background-color: #FC90734C;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-bottom: 8px;
+}
+
+/* UI/UX design */
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: none; /* Loại bỏ greyscale */
+}
+
+/* Thay đổi màu nền của mũi tên sang phải và trái */
+.carousel-dark .carousel-control-prev,
+.carousel-dark .carousel-control-next {
+    background-color: #FDF7E9; /* Đổi màu nền */
+    border-radius: 50%; /* Làm cho nền hình tròn */
+    max-width: 70px; /* Kích thước tối đa theo chiều rộng */
+    max-height: 70px; /* Kích thước tối đa theo chiều cao */
+    top: 45%;
+}
+
+.carousel-dark .carousel-control-prev {
+    left: 2%;
+}
+
+.carousel-dark .carousel-control-next {
+    right: 2%;
+}
+
+@media (max-width: 991px){
+    .carousel-dark .carousel-control-prev, .carousel-dark .carousel-control-next {
+        max-width: 50px;
+        height: 50px;
+    }
+}
+
+/* End Section 2 */
+
+/* Start Section 3 */
+/* Section Header cho section 3 */
+#about-me-section {
+    position: relative;
+    padding: 0;
+    top: 50px;
+    margin-bottom: 120px;
+}
+
+#about-me-section img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+.about-big-text {
+    position: absolute;
+    width: 80%;
+    max-width: 581px;
+    top: 0;
+    left: 3%;
+    font-family: "Dancing Script";
+    font-weight: 400;
+    font-size: clamp(3rem, 16vw, 16rem); /* Responsive font size */
+    text-align: start;
+    color: #FDF7E9;
+    opacity: 80%;
+    animation: gentleMovementLeft 1.3s ease forwards; /* Adjust animation duration as needed */
+}
+
+.about-big-text-2 {
+    position: absolute;
+    top: 63%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    font-family: "Dancing Script";
+    font-weight: 400;
+    font-size: clamp(3rem, 16vw, 16rem); /* Responsive font size */
+    text-align: end;
+    color: #FDF7E9;
+    opacity: 80%;
+    animation: gentleMovementRight 1.5s ease forwards;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    #about-me-section {
+        margin-bottom: 100px; /* Khoảng cách lớn hơn cho các thiết bị nhỏ hơn */
+        margin-top: 100px;
+    }
+}
+
+/* Body section 3 */
+.flip-container {
+    cursor: pointer; /* Adding cursor pointer for better indication of click */
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    /* height: 300px; Adjust the height as needed */
+}
+
+.flipper img{
+    background-color: transparent; /* Ensure that the background is set to transparent */
+    border: none;
+}
+
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.front {
+    z-index: 2;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.contact-group{
+    display: flex;
+    gap: 10px;
+}
+
+.contact-group img {
+    position: relative;
+}
+
+.contact-group .text-wrapper{
+    position: relative;
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+}
+
+.icon {
+    width: 50px; /* Adjust the icon size as needed */
+    margin-top: 0; /* Adjust the margin between icons */
+    margin-left: 0;
+    margin-right: 25px;
+}
+
+
+
+/* Tablet Styles */
+@media (max-width: 991px) {
+    .designer-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px; /* Adjust margin between icons */
+    }
+
+    .designer-icon {
+        order: 3; /* Move designer-icon below front and back images */
+        width: 100%; /* Make the width full for tablet screens */
+        margin: 20px 0; /* Adjust margin between images for tablet */
+    }
+
+    .flipper img{
+        display: flex;
+
+    }
+}
+
+/* For phones */
+@media (max-width: 767px) {
+    .designer-icons {
+        display: none; /* Hide designer-icons for phone interface */
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    #about {
+        margin-bottom: 300px; /* Khoảng cách lớn hơn cho các thiết bị nhỏ hơn */
+    }
+}
+/* End Section 3 */
+
+/* Start Section 4 */
+/* Section Header cho section 4 */
+#faq-section {
+    position: relative;
+    padding: 0;
+    margin-top: 50px;
+}
+
+#faq-section img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+.faq-big-text {
+    position: absolute;
+    width: 80%;
+    max-width: 581px;
+    top: 10%;
+    left: 5%;
+    font-family: "Dancing Script";
+    font-weight: 400;
+    font-size: clamp(3rem, 8.5vw, 10rem); /* Responsive font size */
+    text-align: start;
+    color: #FDF7E9;
+    opacity: 0.8;
+    animation: gentleMovementLeft 1.3s ease forwards; /* Adjust animation duration as needed */
+}
+
+.faq-text {
+    position: absolute;
+    width: 80%;
+    max-width: 718px;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: clamp(1.5rem, 4vw, 4.5rem); /* Responsive font size */
+    text-align: center;
+    letter-spacing: 4rem;
+    animation: gentleMovementUp 2s ease forwards;
+}
+
+.faq-big-text-2 {
+    position: absolute;
+    top: 65%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    font-family: "Dancing Script";
+    font-weight: 400;
+    font-size: clamp(3rem, 8.5vw, 10rem); /* Responsive font size */
+    text-align: end;
+    color: #FDF7E9;
+    opacity: 0.8;
+    white-space: nowrap;
+    animation: gentleMovementRight 1.5s ease forwards;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    #faq-section {
+        margin-bottom: 100px; /* Khoảng cách lớn hơn cho các thiết bị nhỏ hơn */
+        margin-top: 100px;
+    }
+}
+
+/* Questions for FAQ */
+#custom-accordion[aria-expanded="true"] {
+    background-color: #f9af9a;
+    color: #000;
+}
+
+#custom-accordion{
+    background-color: #93BAA7;
+    color: #FDF7E9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+
+.accordion-button::after {
+    /* Chọn mũi tên trong button của accordion */
+    font-weight: bold; /* Làm mũi tên trở nên đậm hơn */
+    background-color: #FDF7E9; /* Đổi màu nền của mũi tên */
+    padding: 10px; /* Điều chỉnh khoảng cách bên trong hình tròn */
+    border-radius: 50%; /* Làm tròn các góc của hình tròn */
+    width: 30px; /* Định dạng chiều rộng của hình tròn */
+    height: 30px; /* Định dạng chiều cao của hình tròn */
+    align-items: center; /* Căn giữa mũi tên */
+    justify-content: center; /* Căn giữa mũi tên */
+}
+
+.accordion-item {
+    overflow: hidden; /* Ngăn không cho nội dung vượt ra ngoài */
+    border-radius: 10px; /* Điều chỉnh bán kính bo tròn tùy theo thiết kế của bạn */
+}
+
+/* Start Section 5 */
+/* Section Header cho section 5 */
+#contact-section {
+    position: relative;
+    padding: 0;
+    margin-top: 50px;
+}
+
+#contact-section img {
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+}
+
+.contact-big-text {
+    position: absolute;
+    width: 80%;
+    max-width: 581px;
+    top: 10%;
+    left: 4%;
+    font-family: "Dancing Script";
+    font-weight: 400;
+    font-size: clamp(3rem, 8.5vw, 10rem); /* Responsive font size */
+    text-align: start;
+    color: black;
+    opacity: 30%;
+    animation: gentleMovementLeft 1.3s ease forwards; /* Adjust animation duration as needed */
+}
+
+.contact-big-text-2 {
+    position: absolute;
+    top: 62%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    font-family: "Dancing Script";
+    font-weight: 400;
+    font-size: clamp(3rem, 8.5vw, 10rem); /* Responsive font size */
+    text-align: end;
+    color: black;
+    opacity: 30%;
+    white-space: nowrap;
+    animation: gentleMovementRight 1.5s ease forwards;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    #contact-section {
+        margin-bottom: 100px; /* Khoảng cách lớn hơn cho các thiết bị nhỏ hơn */
+        margin-top: 100px;
+    }
+}
+
+/* Section 5 body */
+#call-me{
+    background-image: linear-gradient(145deg, var(--secondary), var(--primary));
+    border-radius: 1rem;
+    box-shadow: 0 .2rem .6rem #0006;
+}
+
+#get-in-touch-text {
+    border: 2px solid #FC9073;
+    color: #FC9073;
+    transition: color 0.3s, background-position 0.3s ease-out;
+    background-image: linear-gradient(to right, #FC9073 0%, #FC9073 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+#get-in-touch-text:hover {
+    color: white;
+    background-position: 0 0;
+}
+
+#contact-img{
+    border-radius: 0.7rem;
+}
+
+@media (max-width: 991px) {
+    #contact-img{
+    display: none;
+    }
+}
+/* End Section 5 */
+
+/* Start Footer */
+footer {
+    padding: 0;
+    background-color: #fa967ab8;
+    margin: 0;
+    box-sizing: border-box;
+    margin-top: 20%;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 50px 30px 20px;
+}
+
+.footerNav {
+    list-style: none; /* Loại bỏ dấu chấm */
+    padding: 0; /* Xóa padding mặc định của ul */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footerNav li {
+    margin: 0 10px; /* Khoảng cách giữa các mục trong danh sách */
+}
+
+.footerNav li a {
+    color: white; /* Đổi màu chữ thành đen */
+    text-decoration: none; /* Loại bỏ gạch chân mặc định */
+    display: block; /* Hiển thị mỗi mục list trên một dòng */
+    padding: 5px 10px; /* Đặt khoảng cách giữa các mục trong danh sách */
+}
+
+.footerNav li a:hover {
+    opacity: 0.7; /* Giảm độ trong suốt khi di chuột vào */
+}
+
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: #FC9073;
+    opacity: 0.9;
+}
+
+/* Hover Effects on Social Media Icons */
+.socialIcons a:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: #FC9073;
+    transition: 0.5s;
+}
+
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p{
+    color: white;
+}
+
+.designer{
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 991px) {
+    .footerNav,
+    .socialIcons {
+        text-align: center;
+    }
+
+    .socialIcons {
+        justify-content: center;
+    }
+
+    .footerNav li {
+        margin-bottom: 0; /* Xóa khoảng cách giữa các mục trong danh sách khi thu vào */
+    }
+
+    .footerNav li a {
+        display: block; /* Hiển thị mỗi mục list trên một dòng */
+    }
+}
+
+@media (min-width: 992px) and (max-width: 2000px){
+    .footerNav {
+        list-style: none; /* Loại bỏ dấu chấm */
+        padding: 0; /* Xóa padding mặc định của ul */
+        display: flex; /* Hiển thị các mục danh sách theo chiều ngang */
+        justify-content: center; /* Canh giữa các mục danh sách */
+    }    
+}
+
+/* Animation */
+@keyframes gentleMovementLeft {
+    0% { transform: translateX(-50px); }
+    100% { transform: translateX(0); }
+}
+@keyframes gentleMovementRight {
+    0% { transform: translateX(100%) translateY(-50%); }
+    100% { transform: translateX(-50%) trasnslateY(-50%); }
+}
+@keyframes gentleMovementUp {
+    from {
+        transform: translateY(100%) translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0) translateX(-50%);
+        opacity: 1;
+    }
+}
