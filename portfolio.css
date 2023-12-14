@@ -126,7 +126,7 @@
 
 .my-big-text-2 {
     position: absolute;
-    top: 72%;
+    top: 80%;
     left: 79%;
     transform: translate(-50%, -50%);
     font-family: "Dancing Script";
@@ -238,7 +238,7 @@
 
 .about-big-text-2 {
     position: absolute;
-    top: 73%;
+    top: 78%;
     left: 78%;
     transform: translate(-50%, -50%);
     font-family: "Dancing Script";
@@ -414,7 +414,7 @@
 
 .faq-big-text-2 {
     position: absolute;
-    top: 70%;
+    top: 73%;
     left: 73%;
     transform: translate(-50%, -50%);
     font-family: "Dancing Script";
@@ -427,7 +427,7 @@
     animation: gentleMovementRight 1.5s ease forwards;
 }
 
-@media (min-width: 320px) and (max-width: 828px) {
+@media (min-width: 320px) and (max-width: 768px) {
     #faq-section {
         margin-bottom: 100px; /* Khoảng cách lớn hơn cho các thiết bị nhỏ hơn */
         margin-top: 100px;
@@ -438,7 +438,7 @@
     }
 
     .faq-big-text-2{
-        left: 60vw;
+        left: 67vw;
     }
 }
 
@@ -504,7 +504,7 @@
 
 .contact-big-text-2 {
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 80%;
     transform: translate(-50%, -50%);
     font-family: "Dancing Script";
