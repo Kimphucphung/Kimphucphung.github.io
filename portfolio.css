@@ -432,6 +432,10 @@
         margin-bottom: 100px; /* Khoảng cách lớn hơn cho các thiết bị nhỏ hơn */
         margin-top: 100px;
     }
+
+    .faq-text {
+        letter-spacing: 3.4rem;
+    }
 }
 
 /* Questions for FAQ */
