@@ -112,11 +112,11 @@
     position: absolute;
     width: 80%;
     max-width: 581px;
-    top: 1%;
+    top: 15%;
     left: 5%;
     font-family: "Dancing Script";
     font-weight: 400;
-    font-size: clamp(3rem, 16vw, 16rem); /* Responsive font size */
+    font-size: clamp(3rem, 8.5vw, 10rem); /* Responsive font size */
     text-align: start;
     color: black;
     opacity: 25%;
@@ -126,22 +126,28 @@
 
 .my-big-text-2 {
     position: absolute;
-    top: 80%;
-    left: 79%;
+    top: 70%;
+    left: 85%;
     transform: translate(-50%, -50%);
     font-family: "Dancing Script";
     font-weight: 400;
-    font-size: clamp(3rem, 16vw, 16rem); /* Responsive font size */
+    font-size: clamp(3rem, 8.5vw, 10rem); /* Responsive font size */
     text-align: end;
     color: black;
     opacity: 25%;
     animation: gentleMovementRight 1.5s ease forwards;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
     #my-work-section {
         margin-bottom: 100px; /* Khoảng cách lớn hơn cho các thiết bị nhỏ hơn */
-        margin-top: 100px;
+    }
+    .my-big-text {
+        top: 7%;
+    }
+    .my-big-text-2 {
+        left: 78%;
+        top: 80%;
     }
 }
 
@@ -225,11 +231,11 @@
     position: absolute;
     width: 80%;
     max-width: 581px;
-    top: 0;
-    left: 3%;
+    top: 15%;
+    left: 5%;
     font-family: "Dancing Script";
     font-weight: 400;
-    font-size: clamp(3rem, 16vw, 16rem); /* Responsive font size */
+    font-size: clamp(3rem, 8.5vw, 10rem); /* Responsive font size */
     text-align: start;
     color: #FDF7E9;
     opacity: 80%;
@@ -238,22 +244,30 @@
 
 .about-big-text-2 {
     position: absolute;
-    top: 78%;
+    top: 70%;
     left: 78%;
     transform: translate(-50%, -50%);
     font-family: "Dancing Script";
     font-weight: 400;
-    font-size: clamp(3rem, 16vw, 16rem); /* Responsive font size */
+    font-size: clamp(3rem, 8.5vw, 10rem); /* Responsive font size */
     text-align: end;
     color: #FDF7E9;
     opacity: 80%;
     animation: gentleMovementRight 1.5s ease forwards;
+    white-space: nowrap;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
     #about-me-section {
         margin-bottom: 100px; /* Khoảng cách lớn hơn cho các thiết bị nhỏ hơn */
         margin-top: 100px;
+    }
+    .about-big-text{
+        opacity: 1;
+    }
+    .about-big-text-2 {
+        left: 75%;
+        opacity: 1;
     }
 }
 
@@ -372,7 +386,7 @@
 #faq-section {
     position: relative;
     padding: 0;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 #faq-section img {
@@ -385,7 +399,7 @@
     position: absolute;
     width: 80%;
     max-width: 581px;
-    top: 10%;
+    top: 12%;
     left: 5%;
     font-family: "Dancing Script";
     font-weight: 400;
@@ -401,7 +415,7 @@
     width: 80%;
     max-width: 718px;
     top: 42%;
-    left: 50%;
+    left: 42%;
     transform: translate(-50%, -50%);
     font-family: "Playfair Display";
     font-weight: 700;
@@ -413,8 +427,8 @@
 
 .faq-big-text-2 {
     position: absolute;
-    top: 73%;
-    left: 73%;
+    top: 69%;
+    left: 70%;
     transform: translate(-50%, -50%);
     font-family: "Dancing Script";
     font-weight: 400;
@@ -426,18 +440,26 @@
     animation: gentleMovementRight 1.5s ease forwards;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 1140px) {
     #faq-section {
         margin-bottom: 100px; /* Khoảng cách lớn hơn cho các thiết bị nhỏ hơn */
         margin-top: 100px;
     }
 
     .faq-text {
-        letter-spacing: 10vw;
+        letter-spacing: 9vw;
+        left: 52%;
     }
 
     .faq-big-text-2{
-        left: 65vw;
+        left: 62vw;
+        opacity: 1;
+        top: 73%;
+    }
+
+    .faq-big-text {
+        opacity: 1;
+        top: 10%;
     }
 }
 
@@ -554,6 +576,10 @@
 @media (max-width: 768px) {
     #contact-img{
     display: none;
+    }
+
+    .contact-big-text-2{
+        left: 75%;
     }
 }
 /* End Section 5 */
