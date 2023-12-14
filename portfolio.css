@@ -99,7 +99,7 @@
 #my-work-section {
     position: relative;
     padding: 0;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 #my-work-section img {
@@ -126,7 +126,7 @@
 
 .my-big-text-2 {
     position: absolute;
-    top: 55%;
+    top: 72%;
     left: 79%;
     transform: translate(-50%, -50%);
     font-family: "Dancing Script";
@@ -238,7 +238,7 @@
 
 .about-big-text-2 {
     position: absolute;
-    top: 63%;
+    top: 73%;
     left: 78%;
     transform: translate(-50%, -50%);
     font-family: "Dancing Script";
@@ -373,7 +373,7 @@
 #faq-section {
     position: relative;
     padding: 0;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 #faq-section img {
@@ -414,8 +414,8 @@
 
 .faq-big-text-2 {
     position: absolute;
-    top: 65%;
-    left: 70vw;
+    top: 70%;
+    left: 73%;
     transform: translate(-50%, -50%);
     font-family: "Dancing Script";
     font-weight: 400;
@@ -504,7 +504,7 @@
 
 .contact-big-text-2 {
     position: absolute;
-    top: 62%;
+    top: 70%;
     left: 80%;
     transform: translate(-50%, -50%);
     font-family: "Dancing Script";
@@ -552,7 +552,7 @@
     border-radius: 0.7rem;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
     #contact-img{
     display: none;
     }
