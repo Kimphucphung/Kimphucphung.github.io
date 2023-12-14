@@ -350,7 +350,6 @@
 
     .flipper img{
         display: flex;
-
     }
 }
 
@@ -438,7 +437,7 @@
     }
 
     .faq-big-text-2{
-        left: 67vw;
+        left: 65vw;
     }
 }
 
@@ -676,7 +675,7 @@ footer {
 }
 @keyframes gentleMovementRight {
     0% { transform: translateX(100%) translateY(-50%); }
-    100% { transform: translateX(-50%) trasnslateY(-50%); }
+    100% { transform: translateX(-50%) translateY(-50%); }
 }
 @keyframes gentleMovementUp {
     from {
