@@ -408,14 +408,14 @@
     font-weight: 700;
     font-size: clamp(1.5rem, 4vw, 4.5rem); /* Responsive font size */
     text-align: center;
-    letter-spacing: 4rem;
+    letter-spacing: 8.5vw;
     animation: gentleMovementUp 2s ease forwards;
 }
 
 .faq-big-text-2 {
     position: absolute;
     top: 65%;
-    left: 73%;
+    left: 70vw;
     transform: translate(-50%, -50%);
     font-family: "Dancing Script";
     font-weight: 400;
@@ -427,14 +427,18 @@
     animation: gentleMovementRight 1.5s ease forwards;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 828px) {
     #faq-section {
         margin-bottom: 100px; /* Khoảng cách lớn hơn cho các thiết bị nhỏ hơn */
         margin-top: 100px;
     }
 
     .faq-text {
-        letter-spacing: 3.4rem;
+        letter-spacing: 10vw;
+    }
+
+    .faq-big-text-2{
+        left: 60vw;
     }
 }
 
