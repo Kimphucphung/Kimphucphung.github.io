@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Kim Phuc Phung - Graphic & UI/UX Designer</title>
     <link rel="stylesheet" href="portfolio.css">
-    <link rel="stylesheet" href="portfolio.js">
+    <link rel="stylesheet" href="myportfolio.js">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
 
@@ -47,7 +47,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body"> 
-              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <ul class="navbar-nav justify-content-center flex-grow-1" style="margin-left: 10rem;">
                 <li class="nav-item">
                   <a class="nav-link mx-lg-2" href="#my-work-section">Works</a>
                 </li>
@@ -64,6 +64,15 @@
                   <a class="nav-link mx-lg-2" href="#contact-section">Contact</a>
                 </li>
               </ul>
+              <li class="nav-item dropdown" style="margin-right: 5.7rem;" id="navbar-multiLanguage">
+                <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  EN
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#" onclick="switchLanguage('EN')">English</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="switchLanguage('VN')">Vietnamese</a></li>
+                </ul>
+              </li>
             </div>
           </div>
         </div>
@@ -91,8 +100,8 @@
     <div class="container">
         <!--Start Graphic Design-->
         <div class="row justify-content-center">
-            <div class="col-xl-6 alert alert-warning text-center" role="alert" style="margin-top: -60px; font-size: 18px;">
-              If you want to see more about my work, <a href="https://drive.google.com/drive/folders/1YeAdtWiKyWSt_t8JZgAu-aUJIwYH4Cs6?usp=sharing" class="alert-link">here the link</a>. Give it a click if you like.
+            <div class="col-xl-6 alert alert-warning text-center" role="alert" style="margin-top: -60px; font-size: 18px;" id="illustrationText">
+                Below are just illustrations, if you want to see details about my work, <a href="https://drive.google.com/drive/folders/1YeAdtWiKyWSt_t8JZgAu-aUJIwYH4Cs6?usp=sharing" class="alert-link">here the link</a>. Give it a click if you like.
             </div>
         </div>
         <div class="graphic-design">
@@ -105,8 +114,8 @@
                         <img src="./assets/vietnamese cuisine saigonspice-01.jpg" class="card-img-top" alt="">
                     </div>
                     <div class="card-body" style="background-color: #FC90734C; font-family: Arial, Helvetica, sans-serif;">
-                        <h5 class="card-title" style="font-size: 20px; font-weight: 700; ">SaigonSpice, a Vietnamese food brand</h5>
-                        <p class="card-text">Fusing tradition with modernity in its vibrant poster and typography. 
+                        <h5 class="card-title" style="font-size: 20px; font-weight: 700;" id="cardTitle1">SaigonSpice, a Vietnamese food brand</h5>
+                        <p class="card-text" id="cardText1">Fusing tradition with modernity in its vibrant poster and typography. 
                         </p>
                         <p class="btn" style="border-radius: 14px; background-color: #FDF7E9;">Adobe Illustrator</p>
                     </div>
@@ -118,8 +127,8 @@
                         <img src="./assets/áo dài brand.png" class="card-img-top" alt="">
                     </div>
                     <div class="card-body" style="background-color: #FC90734C; font-family: Arial, Helvetica, sans-serif;">
-                        <h5 class="card-title" style="font-size: 20px; font-weight: 700; ">Illustration Art for a Vietnamese ao dai brand</h5>
-                        <p class="card-text">Inspired by the ao dai's lines, merging tradition with modern aesthetics.
+                        <h5 class="card-title" style="font-size: 20px; font-weight: 700;" id="cardTitle2">Illustration Art for a Vietnamese ao dai brand</h5>
+                        <p class="card-text" id="cardText2">Inspired by the ao dai's lines, merging tradition with modern aesthetics.
                         </p>
                         <p class="btn" style="border-radius: 14px; background-color: #FDF7E9;">Adobe Illustrator</p>
                     </div>
@@ -131,8 +140,8 @@
                         <img src="./assets/Glamourista perfume poster-01.jpg" class="card-img-top" alt="">
                     </div>
                     <div class="card-body" style="background-color: #FC90734C; font-family: Arial, Helvetica, sans-serif;">
-                        <h5 class="card-title" style="font-size: 20px; font-weight: 700; ">Poster for Perfume Brand</h5>
-                        <p class="card-text">Inspired by starry nights, it radiates high-end glamour and international fashion with sophisticated style.
+                        <h5 class="card-title" style="font-size: 20px; font-weight: 700;" id="cardTitle3">Poster for Perfume Brand</h5>
+                        <p class="card-text" id="cardText3">Inspired by starry nights, it radiates high-end glamour and international fashion with sophisticated style.
                         </p>
                         <p class="btn" style="border-radius: 14px; background-color: #FDF7E9;">Adobe Illustrator</p>
                     </div>
@@ -144,8 +153,8 @@
                         <img src="./assets/poster.png" class="card-img-top" alt="">
                     </div>
                     <div class="card-body" style="background-color: #FC90734C; font-family: Arial, Helvetica, sans-serif;">
-                        <h5 class="card-title" style="font-size: 20px; font-weight: 700; ">CocoTacos teases Taco Tuesday pt1.</h5>
-                        <p class="card-text">Mexico's vibrant culture inspires this triangle-rich design. 
+                        <h5 class="card-title" style="font-size: 20px; font-weight: 700;" id="cardTitle4">CocoTacos teases Taco Tuesday pt1.</h5>
+                        <p class="card-text" id="cardText4">An ads for Mexican cuisine, with taco images, fresh colors and strong fonts. 
                         </p>
                         <p class="btn" style="border-radius: 14px; background-color: #FDF7E9;">Adobe Illustrator</p>
                     </div>
@@ -157,8 +166,8 @@
                         <img src="./assets/poster 2.png" class="card-img-top" alt="">
                     </div>
                     <div class="card-body" style="background-color: #FC90734C; font-family: Arial, Helvetica, sans-serif;">
-                        <h5 class="card-title" style="font-size: 20px; font-weight: 700; ">CocoTacos teases Taco Tuesday pt2.</h5>
-                        <p class="card-text">Mexico's vibrant culture inspires this triangle-rich design. 
+                        <h5 class="card-title" style="font-size: 20px; font-weight: 700;" id="cardTitle5">CocoTacos teases Taco Tuesday pt2.</h5>
+                        <p class="card-text" id="cardText5">An ads for Mexican cuisine, with taco images, fresh colors and strong fonts. 
                         </p>
                         <p class="btn" style="border-radius: 14px; background-color: #FDF7E9;">Adobe Illustrator</p>
                     </div>
@@ -170,8 +179,8 @@
                         <img src="./assets/POSTER-CUỐI.png" class="card-img-top" alt="">
                     </div>
                     <div class="card-body" style="background-color: #FC90734C; font-family: Arial, Helvetica, sans-serif;">
-                        <h5 class="card-title" style="font-weight: 700; ">CocoTacos teases Taco Tuesday pt3.</h5>
-                        <p class="card-text">Mexico's vibrant culture inspires this triangle-rich design. 
+                        <h5 class="card-title" style="font-weight: 700;" id="cardTitle6">CocoTacos teases Taco Tuesday pt3.</h5>
+                        <p class="card-text" id="cardText6">An ads for Mexican cuisine, with taco images, fresh colors and strong fonts. 
                         </p>
                         <p class="btn" style="border-radius: 14px; background-color: #FDF7E9;">Adobe Illustrator</p>
                     </div>
@@ -183,8 +192,8 @@
                         <img src="./assets/gucci.jpg" class="card-img-top" alt="">
                     </div>
                     <div class="card-body" style="background-color: #FC90734C; font-family: Arial, Helvetica, sans-serif;">
-                        <h5 class="card-title" style="font-weight: 700; ">The New Winter Collection of Gucci.</h5>
-                        <p class="card-text">Bold colors, rebellious typography redefine fashion. 
+                        <h5 class="card-title" style="font-weight: 700;" id="cardTitle7">The New Winter Collection of Gucci.</h5>
+                        <p class="card-text" id="cardText7">Bold colors, rebellious typography redefine fashion. 
                         </p>
                         <p class="btn" style="border-radius: 14px; background-color: #FDF7E9;">Adobe Illustrator</p>
                     </div>
@@ -196,8 +205,8 @@
                         <img src="./assets/2.jpg" class="card-img-top" alt="">
                     </div>
                     <div class="card-body" style="background-color: #FC90734C; font-family: Arial, Helvetica, sans-serif;">
-                        <h5 class="card-title" style="font-weight: 700; ">Pollution's Eco Impact Poster.</h5>
-                        <p class="card-text">Mexico's vibrant culture inspires this triangle-rich design. 
+                        <h5 class="card-title" style="font-weight: 700;" id="cardTitle8">Pollution's Eco Impact Poster.</h5>
+                        <p class="card-text" id="cardText8">Pollution's impact through creative art and dark color tones. 
                         </p>
                         <p class="btn" style="border-radius: 14px; background-color: #FDF7E9;">Adobe Illustrator</p>
                     </div>
@@ -209,8 +218,8 @@
                         <img src="./assets/bt 17112022.jpg" class="card-img-top" alt="">
                     </div>
                     <div class="card-body" style="background-color: #FC90734C; font-family: Arial, Helvetica, sans-serif;">
-                        <h5 class="card-title" style="font-weight: 700; ">Coco Mademoiselle: A Perfume</h5>
-                        <p class="card-text">Mexico's vibrant culture inspires this triangle-rich design. 
+                        <h5 class="card-title" style="font-weight: 700;" id="cardTitle9">Coco Mademoiselle</h5>
+                        <p class="card-text" id="cardText9">Featuring a black perfume bottle and silk ribbon, embodying the brand's alluring and mysterious essence. 
                         </p>
                         <p class="btn" style="border-radius: 14px; background-color: #FDF7E9;">Adobe Illustrator</p>
                     </div>
@@ -299,8 +308,9 @@
     <div class="container mt-5" id="about">
         <div class="row">
             <div class="col-md-4 col-lg-4">
-                <h2>Kim Phuc Phung, a passionate graphic and UI/UX designer.</h2>
-                <p>As a designer, my focus is on understanding and meeting customer needs by delivering valuable solutions. I specialize in creating visually appealing designs that prioritize user experience. With strong teamwork skills, I ensure designs not only look good but also function seamlessly for an outstanding user experience.
+                <h2 id="aboutmeHeader">Kim Phuc Phung,</h2>
+                <h5 id="aboutmeTitle">a passionate graphic and UI/UX designer born in 2004, in Hanoi.</h5>
+                <p id="aboutmeText">As a designer, my focus is on understanding and meeting customer needs by delivering valuable solutions. I specialize in creating visually appealing designs that prioritize user experience. With strong teamwork skills, I ensure designs not only look good but also function seamlessly for an outstanding user experience.
                 </p>
             </div>
             <div class="col-md-6 col-lg-4 d-flex justify-content-center" id="ảnh-flip">
@@ -316,7 +326,7 @@
                 </div>
             </div>
             <div class="col-6 col-md-3 col-lg-4" id="connect-icons">
-                <h5>Connect with me</h5>
+                <h5 id="aboutmecontactText">Connect with me</h5>
                 <ul class="list-group">
                     <div class="contact-group">
                         <img src="./assets/sms.svg" alt="">
@@ -364,72 +374,72 @@
         <div class="accordion-item mb-3 rounded rounded-3">
           <h2 class="accordion-header">
             <button class="accordion-button custom-accordion-button" id="custom-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Q: What inspired you to become a graphic designer and UI/UX designer?
+              Q: What inspired you to become a graphic and UI/UX designer?
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-               A: My fascination with <strong>art </strong> and <strong>technology</strong> inspired me to merge creativity with functionality in graphic and UI/UX design. <strong>Witnessing design's</strong> impact on user experiences motivated me to pursue this field.
+            <div class="accordion-body" id="faqText1">
+              A: Drawing and creating one-of-a-kind images from the world around me was a childhood passion of mine. The impact that images have on others became apparent to me. In order to provide everyone with <strong>innovative concepts </strong>and the <strong>highest quality user experience</strong>, this drives me to pursue a career as a graphic and user interface/UX designer.
             </div>
           </div>
         </div>
         <div class="accordion-item mb-3">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed custom-accordion-button" id="custom-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <button class="accordion-button collapsed custom-accordion-button" id="custom-accordion2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
               Q: How do you approach a new design project?
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
+            <div class="accordion-body" id="faqText2">
                 A: <strong>Understanding client objectives and audience is key.</strong> I start with thorough research, collaboration, and iteration to ensure designs align with vision and user needs.
             </div>
           </div>
         </div>
         <div class="accordion-item mb-3">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed custom-accordion-button" id="custom-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <button class="accordion-button collapsed custom-accordion-button" id="custom-accordion3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 Q: Can you describe your design style?
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                My approach to design blends <strong>clean aesthetics,</strong> a keen eye for <strong>detail</strong>, and a strong <strong>focus on users</strong>, considering both <strong>functionality </strong> and <strong>visual attractiveness.</strong> I care about how things work just as much as how they look.
+            <div class="accordion-body" id="faqText3">
+                A: My approach to design blends <strong>clean aesthetics,</strong> a keen eye for <strong>detail</strong>, and a strong <strong>focus on users</strong>, considering both <strong>functionality </strong> and <strong>visual attractiveness.</strong> I care about how things work just as much as how they look.
             </div>
           </div>
         </div>
         <div class="accordion-item mb-3">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed custom-accordion-button" id="custom-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <button class="accordion-button collapsed custom-accordion-button" id="custom-accordion4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 Q: If I were to hire you for a design project, what elements or information would you need from me to deeply understand the design I want?
               </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
+              <div class="accordion-body" id="faqText4">
                 A: To grasp your <strong>vision</strong>, a comprehensive <strong>project brief</strong> including objectives, target audience, preferences, and references is crucial. Brand guidelines, if available, and project specifics like timelines and deliverables are also essential.
               </div>
             </div>
         </div>
         <div class="accordion-item mb-3">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed custom-accordion-button" id="custom-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <button class="accordion-button collapsed custom-accordion-button" id="custom-accordion5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                 Q: How long have you been working as a designer?
               </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
+              <div class="accordion-body" id="faqText5">
                 A: Although I may lack extensive professional experience, my restless passion drives me to dedicate myself to using my skills and imagination in design, trying to come up with creative and outstanding solutions to meet customer needs.
               </div>
             </div>
         </div>
         <div class="accordion-item mb-3">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed custom-accordion-button" id="custom-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              <button class="accordion-button collapsed custom-accordion-button" id="custom-accordion6" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                 Q: How do you ensure your designs are functional and interactive?
               </button>
             </h2>
             <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                A: Certainly! While I primarily work as a designer, I do possess a basic understanding of <strong>HTML, CSS, and JavaScript</strong>. Despite my foundational knowledge, I always strive to craft visually appealing and user-friendly designs. It might come as a surprise that I personally coded this website 💁.
+              <div class="accordion-body" id="faqText6">
+                A: While I primarily work as a designer, I do possess a basic understanding of <strong>HTML, CSS, and JavaScript</strong>. Despite my foundational knowledge, I always strive to craft visually appealing and user-friendly designs. It might come as a surprise that I personally coded this website 💁.
               </div>
             </div>
         </div>
@@ -457,7 +467,7 @@
             <div class="col-md-6">
                 <form class="contact-form" action="https://getform.io/f/fa3cbf1f-41a4-48e0-ba97-3971e69658df" method="POST">
                     <div class="mb-3">
-                        <label for="fullName" class="form-label">Full Name</label>
+                        <label for="fullName" class="form-label" id="fullnameTitle">Full Name</label>
                         <input type="text" class="form-control" id="fullName" name="fullName" required>
                     </div>
                     <div class="mb-3">
@@ -465,7 +475,7 @@
                         <input type="email" class="form-control" id="email" name="email" required autocomplete="email">
                     </div>
                     <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
+                        <label for="message" class="form-label" id="messageTitle">Message</label>
                         <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                     </div>
                     <input type="hidden" name="_gotcha" style="display:none !important">
@@ -510,6 +520,164 @@
 
        
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        // Function để chuyển đổi ngôn ngữ
+function switchLanguage(lang) {
+  // Chuyển đổi ngôn ngữ của navbar
+  const navbarElements = document.querySelectorAll('.nav-link');
+  navbarElements.forEach(function(element) {
+    if (lang === 'VN') {
+      switch (element.textContent.trim()) {
+        case 'Kim Phuc':
+          element.textContent = 'Kim Phúc';
+          break;
+        case "Phuc's Portfolio":
+          element.textContent = 'Mục lục';
+          break;
+          case 'Works':
+          element.textContent = 'Dự Án';
+          break;
+        case 'FAQ':
+          element.textContent = 'Hỏi Đáp';
+          break;
+        case 'About':
+          element.textContent = 'Về Mình';
+          break;
+        case 'Contact':
+          element.textContent = 'Liên hệ';
+          break;
+        default:
+          break;
+      }
+    } 
+    else {
+      switch (element.textContent.trim()) {
+        case 'Kim Phúc':
+          element.textContent = 'Kim Phuc';
+          break;
+        case 'Mục lục':
+          element.textContent = "Phuc's Portfolio";
+          break;
+          case 'Dự Án':
+          element.textContent = 'Works';
+          break;
+        case 'Hỏi Đáp':
+          element.textContent = 'FAQ';
+          break;
+        case 'Về Mình':
+          element.textContent = 'About';
+          break;
+        case 'Liên hệ':
+          element.textContent = 'Contact';
+          break;
+        default:
+          break;
+      }
+    }
+  });
+
+  
+  // Chuyển đổi nội dung và link của phần "illustrationText" dựa trên ngôn ngữ được chọn
+  if (lang === 'VN') {
+    document.getElementById('illustrationText').innerHTML = `Dưới đây là hình ảnh minh họa, để khám phá chi tiết về các dự án của mình, vui lòng truy cập vào <a href="https://drive.google.com/drive/folders/1YeAdtWiKyWSt_t8JZgAu-aUJIwYH4Cs6?usp=sharing" class="alert-link">đường liên kết sau</a>.`;
+    document.getElementById('cardTitle1').innerText = "SaigonSpice, một thương hiệu thức ăn Việt Nam";
+    document.getElementById('cardText1').innerText = "Sử dụng màu sắc, hình dạng đơn giản, tạo nên cái nhìn mới về ẩm thực Việt Nam.";
+    document.getElementById('cardTitle2').innerText = "Thương hiệu áo dài Việt Nam";
+    document.getElementById('cardText2').innerText = "Lấy cảm hứng từ đường nét mềm mại của áo dài, kết hợp với sự hiện đại & truyền thống.";
+    document.getElementById('cardTitle3').innerText = "Poster cho thương hiệu nước hoa";
+    document.getElementById('cardText3').innerText = "Lấy cảm hứng từ trời sao, màu be & gold trên nền đen tạo sự sang trọng, tạo ra tác phẩm độc đáo & thu hút.";
+    document.getElementById('cardTitle4').innerText = "Poster CocoTacos vào ngày Taco Tuesday pt1.";
+    document.getElementById('cardText4').innerText = "Là tác phẩm quảng cáo ẩm thực Mexico, với hình ảnh taco, gam màu tươi mới và phông chữ mạnh mẽ";
+    document.getElementById('cardTitle5').innerText = "Poster CocoTacos vào ngày Taco Tuesday pt2.";
+    document.getElementById('cardText5').innerText = "Là tác phẩm quảng cáo ẩm thực Mexico, với hình ảnh taco, gam màu tươi mới và phông chữ mạnh mẽ";
+    document.getElementById('cardTitle6').innerText = "Poster CocoTacos vào ngày Taco Tuesday pt3.";
+    document.getElementById('cardText6').innerText = "Là tác phẩm quảng cáo ẩm thực Mexico, với hình ảnh taco, gam màu tươi mới và phông chữ mạnh mẽ";
+    document.getElementById('cardTitle7').innerText = "BST thu đông 2022 của Gucci.";
+    document.getElementById('cardText7').innerText = "Khuynh hướng thiết kế thập niên 80 với TV, phong cách retro & gam màu vintage.";
+    document.getElementById('cardTitle8').innerText = "Poster tác động sinh thái của ô nhiễm.";
+    document.getElementById('cardText8').innerText = "Truyền tải thông điệp về tác động của ô nhiễm lên môi trường qua thiết kế nghệ thuật sáng tạo và màu sắc tối.";
+    document.getElementById('cardTitle9').innerText = "Coco Mademoiselle";
+    document.getElementById('cardText9').innerText = "Với chai nước hoa và nơ lụa đen, tạo vẻ quyến rũ bí ẩn, đặc trưng cho thương hiệu Chanel.";
+    document.getElementById('aboutmeHeader').innerText = "Phùng Kim Phúc,";
+    document.getElementById('aboutmeTitle').innerText = "sinh năm 2004 tại tp Hà Nội, là nhà thiết kế đồ hoạ và UI/UX";
+    document.getElementById('aboutmecontactText').innerText = "Liên hệ với tôi";
+    document.getElementById('aboutmeText').innerText = "Mình luôn tập trung vào hiểu và đáp ứng nhu cầu của khách hàng bằng cách mang đến những giải pháp mang tính ứng dụng cao cho họ. Ngoài ra, với kỹ năng làm việc nhóm mạnh mẽ, mình không ngần ngại làm việc, lắng nghe, học hỏi từ bất cứ ai và vì thế, mình đảm bảo những thiết kế không chỉ có vẻ ngoài tốt mà còn hoạt động mượt mà, tạo nên trải nghiệm người dùng tuyệt vời nhất có thể.";
+    document.getElementById('custom-accordion').innerText = "Q: Điều gì đã truyền cảm hứng cho bạn trở thành Graphic & UI/UX Designer?";
+    document.getElementById('faqText1').innerText = "A: Khi còn nhỏ, mình luôn thích vẽ và sáng tạo các hình ảnh độc đáo từ mọi thứ xung quanh. Mình nhận ra được sức mạnh của hình ảnh và cách nó tác động đến người khác. Điều này thúc đẩy mình trở thành một Graphic & UI/UX Designer để mang những ý tưởng tươi mới và trải nghiệm người dùng tốt nhất đến với mọi người.";
+    document.getElementById('custom-accordion2').innerText = "Q: Bạn bắt đầu tiếp cận một thiết kế mới như thế nào?";
+    document.getElementById('faqText2').innerText = "A: Hiểu được mục tiêu và đối tượng của khách hàng là điều quan trọng. Mình bắt đầu bằng việc nghiên cứu, cộng tác và lặp lại kỹ lưỡng để đảm bảo thiết kế phù hợp với tầm nhìn và nhu cầu của người dùng.";
+    document.getElementById('custom-accordion3').innerText = "Q: Bạn tự mô tả phong cách thiết kế của mình như thế nào?";
+    document.getElementById('faqText3').innerText = "A: Phong cách thiết kế của mình là sự kết hợp giữa hiện đại và tinh tế, tập trung vào trải nghiệm người dùng và sự đơn giản. Mình luôn chú trọng vào việc tạo ra sự đồng nhất và tính tương tác cao, đồng thời đảm bảo mỗi thiết kế phản ánh bản sắc riêng và độc đáo của người sử dụng.";
+    document.getElementById('custom-accordion4').innerText = "Q: Nếu tôi thuê bạn cho một dự án thiết kế, bạn cần tôi cung cấp những yếu tố hoặc thông tin gì để có thể hiểu về thiết kế mà tôi muốn?";
+    document.getElementById('faqText4').innerText = "A: Để hiểu rõ ý tưởng của khách hàng, mình cần các thông tin chi tiết nhất có thể, ví dụ như đối tượng khách hàng, sở thích và tham khảo. Ngoài ra, các định hướng của thương hiệu (nếu có), thông tin cụ thể về dự án như thời gian và sản phẩm cần làm cũng rất quan trọng để tạo ra thiết kế phù hợp với nhu cầu và sở thích của khách hàng.";
+    document.getElementById('custom-accordion5').innerText = "Q: Bạn đã có kinh nghiệm làm designer bao lâu rồi?";
+    document.getElementById('faqText5').innerText = "A: Mặc dù mình chưa có nhiều kinh nghiệm chuyên nghiệp, nhưng đam mê không ngừng của mình đã thúc đẩy mình dành thời gian và nỗ lực để áp dụng kỹ năng và sự sáng tạo của mình trong thiết kế. Mình luôn cố gắng tìm ra những giải pháp độc đáo và xuất sắc để đáp ứng nhu cầu của khách hàng.";
+    document.getElementById('custom-accordion6').innerText = "Q: Làm thế nào để bạn đảm bảo thiết kế của mình có đầy đủ chức năng và tương tác?";
+    document.getElementById('faqText6').innerText = "A: Trong công việc của mình, dù tập trung chủ yếu vào phần design, nhưng mình cũng có kiến thức cơ bản về HTML, CSS và JavaScript. Và nếu bạn còn thấy băn khoăn thì có thể bạn sẽ thấy ngạc nhiên khi trang web này, từ việc thiết kế đến coding để trang hoạt động, đều là công sức và tâm huyết của riêng mình đấy 💁.";
+    document.getElementById('fullnameTitle').innerText = "Tên đầy đủ";
+    document.getElementById('messageTitle').innerText = "Hãy ghi tin nhắn bạn muốn gửi đến tôi ở đây nhé 🙆🏻!";
+    document.getElementById('get-in-touch-text').innerText = "Liên hệ ngay";
+  } 
+  
+  else {
+    document.getElementById('illustrationText').innerHTML = `Below are just illustrations, if you want to see details about my work, <a href="https://drive.google.com/drive/folders/1YeAdtWiKyWSt_t8JZgAu-aUJIwYH4Cs6?usp=sharing" class="alert-link">here the link</a>. Give it a click if you like.`;
+    document.getElementById('cardTitle1').innerText = "SaigonSpice, a Vietnamese food brand";
+    document.getElementById('cardText1').innerText = "Fusing tradition with modernity in its vibrant poster and typography.";
+    document.getElementById('cardTitle2').innerText = "Illustration Art for a Vietnamese ao dai brand";
+    document.getElementById('cardText2').innerText = "Inspired by the ao dai's lines, merging tradition with modern aesthetics.";
+    document.getElementById('cardTitle3').innerText = "Poster for Perfume Brand";
+    document.getElementById('cardText3').innerText = "Inspired by starry nights, it radiates high-end glamour and international fashion with sophisticated style.";
+    document.getElementById('cardTitle4').innerText = "CocoTacos teases Taco Tuesday pt1.";
+    document.getElementById('cardText4').innerText = "An ads for Mexican cuisine, with taco images, fresh colors and strong fonts.";
+    document.getElementById('cardTitle5').innerText = "CocoTacos teases Taco Tuesday pt2.";
+    document.getElementById('cardText5').innerText = "An ads for Mexican cuisine, with taco images, fresh colors and strong fonts.";
+    document.getElementById('cardTitle6').innerText = "CocoTacos teases Taco Tuesday pt3.";
+    document.getElementById('cardText6').innerText = "An ads for Mexican cuisine, with taco images, fresh colors and strong fonts.";
+    document.getElementById('cardTitle7').innerText = "The New Winter Collection of Gucci.";
+    document.getElementById('cardText7').innerText = "Bold colors, rebellious typography redefine fashion.";
+    document.getElementById('cardTitle8').innerText = "Pollution's Eco Impact Poster.";
+    document.getElementById('cardText8').innerText = "Pollution's impact through creative art and dark color tones.";
+    document.getElementById('cardTitle9').innerText = "Coco Mademoiselle";
+    document.getElementById('cardText9').innerText = "Featuring a black perfume bottle and silk ribbon, embodying the brand's alluring and mysterious essence.";
+    document.getElementById('aboutmeHeader').innerText = "Kim Phuc Phung,";
+    document.getElementById('aboutmeTitle').innerText = "a passionate graphic and UI/UX designer born in 2004, in Hanoi.";
+    document.getElementById('aboutmecontactText').innerText = "Connect with me";
+    document.getElementById('aboutmeText').innerText = "As a designer, my focus is on understanding and meeting customer needs by delivering valuable solutions. I specialize in creating visually appealing designs that prioritize user experience. With strong teamwork skills, I ensure designs not only look good but also function seamlessly for an outstanding user experience.";
+    document.getElementById('custom-accordion').innerText = "Q: What inspired you to become a graphic and UI/UX designer?";
+    document.getElementById('faqText1').innerText = "A: Drawing and creating one-of-a-kind images from the world around me was a childhood passion of mine. The impact that images have on others became apparent to me. In order to provide everyone with innovative concepts and the highest quality user experience, this drives me to pursue a career as a graphic and user interface/UX designer.";
+    document.getElementById('custom-accordion2').innerText = "Q: How do you approach a new design project?";
+    document.getElementById('faqText2').innerText = `A: Understanding client objectives and audience is key. I start with thorough research, collaboration, and iteration to ensure designs align with vision and user needs.`;
+    document.getElementById('custom-accordion3').innerText = "Q: Can you describe your design style?";
+    document.getElementById('faqText3').innerText = "A: My approach to design blends clean aesthetics, a keen eye for detail, and a strong focus on users, considering both functionality and visual attractiveness. I care about how things work just as much as how they look.";
+    document.getElementById('custom-accordion4').innerText = "Q: If I were to hire you for a design project, what elements or information would you need from me to deeply understand the design I want?";
+    document.getElementById('faqText4').innerText = "A: To grasp your vision, a comprehensive project brief including objectives, target audience, preferences, and references is crucial. Brand guidelines, if available, and project specifics like timelines and deliverables are also essential.";
+    document.getElementById('custom-accordion5').innerText = "Q: How long have you been working as a designer?";
+    document.getElementById('faqText5').innerText = "A: Although I may lack extensive professional experience, my restless passion drives me to dedicate myself to using my skills and imagination in design, trying to come up with creative and outstanding solutions to meet customer needs.";
+    document.getElementById('custom-accordion6').innerText = "Q: How do you ensure your designs are functional and interactive?";
+    document.getElementById('faqText6').innerText = "A: While I primarily work as a designer, I do possess a basic understanding of HTML, CSS, and JavaScript. Despite my foundational knowledge, I always strive to craft visually appealing and user-friendly designs. It might come as a surprise that I personally coded this website 💁.";
+    document.getElementById('fullnameTitle').innerText = "Full Name";
+    document.getElementById('messageTitle').innerText = "Message";
+    document.getElementById('get-in-touch-text').innerText = "Get in touch";
+  }
+
+  const dropdownEN = document.querySelector('.dropdown-item:nth-child(1)');
+    const dropdownVN = document.querySelector('.dropdown-item:nth-child(2)');
+    const dropdownToggle = document.getElementById('navbarDropdown');
+
+    if (lang === 'VN') {
+      // Cập nhật dropdown thành Vietnamese
+      dropdownToggle.textContent = 'VN';
+      dropdownEN.textContent = 'English';
+      dropdownVN.textContent = 'Vietnamese';
+    } else {
+      // Cập nhật dropdown thành English
+      dropdownToggle.textContent = 'EN';
+      dropdownEN.textContent = 'English';
+      dropdownVN.textContent = 'Vietnamese';
+    }
+
+}
+    </script>
     
 </body>
 </html>

@@ -45,6 +45,23 @@
     color: #000;
 }
 
+.dropdown-menu {
+    padding: 0 !important;
+    border: none !important;
+    background-color: #FC9073 !important;
+  }
+  
+  .dropdown-item {
+    color: #fff !important;
+    padding: 10px 20px !important;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #fcab95 !important;
+    color: #fff !important;
+    border-radius: 5px;
+  }
+  
 @media (min-width: 991px){
     .nav-link::before{
         content: "";
@@ -235,10 +252,10 @@
     left: 5%;
     font-family: "Dancing Script";
     font-weight: 400;
-    font-size: clamp(3rem, 8.5vw, 10rem); /* Responsive font size */
+    font-size: clamp(3rem, 10vw, 10rem); /* Responsive font size */
     text-align: start;
     color: #FDF7E9;
-    opacity: 80%;
+    opacity: 90%;
     animation: gentleMovementLeft 1.3s ease forwards; /* Adjust animation duration as needed */
 }
 
@@ -249,10 +266,10 @@
     transform: translate(-50%, -50%);
     font-family: "Dancing Script";
     font-weight: 400;
-    font-size: clamp(3rem, 8.5vw, 10rem); /* Responsive font size */
+    font-size: clamp(3rem, 10vw, 10rem); /* Responsive font size */
     text-align: end;
     color: #FDF7E9;
-    opacity: 80%;
+    opacity: 90%;
     animation: gentleMovementRight 1.5s ease forwards;
     white-space: nowrap;
 }
@@ -406,7 +423,7 @@
     font-size: clamp(3rem, 8.5vw, 10rem); /* Responsive font size */
     text-align: start;
     color: #FDF7E9;
-    opacity: 0.8;
+    opacity: 0.9;
     animation: gentleMovementLeft 1.3s ease forwards; /* Adjust animation duration as needed */
 }
 
@@ -435,7 +452,7 @@
     font-size: clamp(3rem, 8.5vw, 10rem); /* Responsive font size */
     text-align: end;
     color: #FDF7E9;
-    opacity: 0.8;
+    opacity: 0.9;
     white-space: nowrap;
     animation: gentleMovementRight 1.5s ease forwards;
 }
@@ -464,12 +481,22 @@
 }
 
 /* Questions for FAQ */
-#custom-accordion[aria-expanded="true"] {
+#custom-accordion[aria-expanded="true"],
+#custom-accordion2[aria-expanded="true"],
+#custom-accordion3[aria-expanded="true"],
+#custom-accordion4[aria-expanded="true"],
+#custom-accordion5[aria-expanded="true"],
+#custom-accordion6[aria-expanded="true"] {
     background-color: #f9af9a;
     color: #000;
 }
 
-#custom-accordion{
+#custom-accordion,
+#custom-accordion2,
+#custom-accordion3,
+#custom-accordion4,
+#custom-accordion5,
+#custom-accordion6{
     background-color: #93BAA7;
     color: #FDF7E9;
     font-family: Arial, Helvetica, sans-serif;
@@ -479,14 +506,8 @@
 
 .accordion-button::after {
     /* Chọn mũi tên trong button của accordion */
-    font-weight: bold; /* Làm mũi tên trở nên đậm hơn */
     background-color: #FDF7E9; /* Đổi màu nền của mũi tên */
-    padding: 10px; /* Điều chỉnh khoảng cách bên trong hình tròn */
     border-radius: 50%; /* Làm tròn các góc của hình tròn */
-    width: 30px; /* Định dạng chiều rộng của hình tròn */
-    height: 30px; /* Định dạng chiều cao của hình tròn */
-    align-items: center; /* Căn giữa mũi tên */
-    justify-content: center; /* Căn giữa mũi tên */
 }
 
 .accordion-item {
